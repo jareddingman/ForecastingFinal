@@ -98,9 +98,9 @@ class BaseballData(Dataset):
                 print(f"no pair found for {xfile}")
                 continue
 
-        video_path = os.path.join(self.video_dir, pair)
-        frames = self.getFrames(video_path=video_path)
-        frameBoxes, miniLabelMap = self.readDaAnnotations(xml_path=xml_path)
+            video_path = os.path.join(self.video_dir, pair)
+            frames = self.getFrames(video_path=video_path)
+            frameBoxes, miniLabelMap = self.readDaAnnotations(xml_path=xml_path)
 
         for label, miniID in miniLabelMap.items(): #omg .items(), duh
             if label not in big_label_map:
