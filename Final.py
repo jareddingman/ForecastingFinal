@@ -102,10 +102,10 @@ class BaseballData(Dataset):
             frames = self.getFrames(video_path=video_path)
             frameBoxes, miniLabelMap = self.readDaAnnotations(xml_path=xml_path)
 
-        for label, miniID in miniLabelMap.items(): #omg .items(), duh
-            if label not in big_label_map:
-                big_label_map[label] = next_label #this lets us iterate
-                next_label += 1
+            for label, miniID in miniLabelMap.items(): #omg .items(), duh
+                if label not in big_label_map:
+                    big_label_map[label] = next_label #this lets us iterate
+                    next_label += 1
 
             for frameID, frame in enumerate(frames): #thanks Ben
                 if frameID not in frameBoxes:
