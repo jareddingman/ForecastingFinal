@@ -4,4 +4,4 @@ Repo for Jared and Zach's Business Forecasting final project. This is a YOLO ima
 Requirements:
 You must have a directory with one folder for CVAT annotations in xml format and another folder for raw baseball videos.
 
-Note that although there is only one py file, it is a class that features many useful functions for obtaining a dataset to use with other neural nets besides YOLO, CVAT xml to YOLO conversion, and YOLO model specification.
+Note that although there is only one py file, it is a class that features many useful functions for obtaining a dataset to use with other neural nets besides YOLO, CVAT xml to YOLO conversion, from-scratch pytensor dataloading, and YOLO model specification.
